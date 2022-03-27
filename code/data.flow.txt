@@ -32,6 +32,7 @@
                                                                                                       └──────────────────────────┘
       Build XML parser (for RSS parsing)
           Extract XML Keys -bash Fx, parameters, tuples?
+            export VAR to file, read file into VAR
           Given XML Key extract Value
 
       Build news feeds list
