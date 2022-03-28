@@ -20,6 +20,25 @@ read_dom () {
             echo "$XMLFeed" | read -d \< ENTITY CONTENT
             }
 
+dev () {
+        dataSample="It is quite possible <that> the characters of <the> nematocysts might afford data as useful to the systematist in this group as do the spicules of sponges, for instance."
+        # echo $dataSample
+        # $dataSample | awk -F"[<>]" '{print $2}' 
+        echo "Number of characters in the string is ${#dataSample}"
+        echo "--------------------"
+        echo ${dataSample[@]}
+        echo ${dataSample[0]}
+        echo ${dataSample[1]}
+        echo ${dataSample[2]}
+        echo ${dataSample[3]}
+        echo ${dataSample[4]}
+
+        echo "--------------------"
+        echo ${dataSample:0:1}
+        }
+
+dev
+
 # ### Load File find-replace with line inserts, store in variable
 # ----------------------------------------------------------
 # XMLFeed='cat feed4.xml'
